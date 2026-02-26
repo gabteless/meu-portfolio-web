@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-</head>
-<body>
-<h1>Escola Virtual</h1>
-<h2>Formulário de Pré-Matricula</h2>
 
-<div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+  <h1>Escola Virtual</h1>
+  <h2>Formulário de Pré-Matricula</h2>
+
+  <div>
     <form action="">
       <fieldset>
         <h3>Dados Pessoais</h3>
@@ -32,48 +34,51 @@
       </fieldset>
 
       <fieldset>
-       <h3>Informações de Matrícula</h3> 
-       <label for="fSerie">Série</label>
-       <div>
-       <select name="fSerie" id="fSerie">
-        <option value="pE">Pré-escolar</option>
-        <option value="pE">Ensino Fundamental</option>
-        <option value="pE">Ensino Médio</option>
-        <option value="pE">Ensino Superior</option>
-    </select>
-       </div>
-
-        <div>
-        <label for="turno" id="turno">Turno: </label>
-        <input type="radio" name="turno" value="1">
-        <label for="manha">Manhã</label>
-        <input type="radio" name="turno" value="2">
-        <label for="manha">Tarde</label><br>
-    </div>
-
-    <div>
-        <label for="atv">Atividades Extracurriculares</label><br>
-        <input type="checkbox" name="fInfo" id="fInfo">
-        <label for="fInfo">Informatica</label> <br>
-        <input type="checkbox" name="fMus" id="fMus"> 
-        <label for="fMus">Música</label> <br>
-        <input type="checkbox" name="fBal" id="fBal">
-        <label for="fBal">Balet</label> <br>
-        <input type="checkbox" name="fPi" id="fPi">
-        <label for="fPi">Pintura</label> <br>
-        <input type="checkbox" name="fJudo" id="fJudo">
-        <label for="fJudo">Judo</label> <br>
-        <input type="checkbox" name="fFutebol" id="fFutebol">
-        <label for="fFutebol">Futebol</label> <br>
-    </div>
+        <h3>Informações de Matrícula</h3>
+        <table>
+          <tr valign="top">
+            <td>
+              <label for="fSerie">Série</label><br>
+              <select name="fSerie" id="fSerie">
+                <option value="pE">Pré-escolar</option>
+                <option value="pE">Ensino Fundamental</option>
+                <option value="pE">Ensino Médio</option>
+                <option value="pE">Ensino Superior</option>
+              </select>
+            </td>
+            <td>
+              <label>Turno:</label><br>
+              <input type="radio" name="turno" value="1">
+              <label for="manha">Manhã</label><br>
+              <input type="radio" name="turno" value="2">
+              <label for="tarde">Tarde</label>
+            </td>
+            <td>
+              <label>Atividades Extracurriculares</label><br>
+              <input type="checkbox" name="fInfo" id="fInfo">
+              <label for="fInfo">Informatica</label><br>
+              <input type="checkbox" name="fMus" id="fMus">
+              <label for="fMus">Música</label><br>
+              <input type="checkbox" name="fBal" id="fBal">
+              <label for="fBal">Balet</label><br>
+              <input type="checkbox" name="fPi" id="fPi">
+              <label for="fPi">Pintura</label><br>
+              <input type="checkbox" name="fJudo" id="fJudo">
+              <label for="fJudo">Judo</label><br>
+              <input type="checkbox" name="fFutebol" id="fFutebol">
+              <label for="fFutebol">Futebol</label>
+            </td>
+          </tr>
+        </table>
       </fieldset>
       <button type="submit">Enviar Formulário</button>
       <button type="reset">Limpar Campos</button>
 
     </form>
-</div>
+  </div>
 
 
 
 </body>
+
 </html>
