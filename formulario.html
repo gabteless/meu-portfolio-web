@@ -44,7 +44,12 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
    }
 
-
+   fieldset{
+    border: 2px solid #1a2f45;
+    border-radius: 8px;
+    padding: 30px 35px;
+    margin-bottom: 35px;
+   }
    </style>
 </head>
 <body>
@@ -54,7 +59,7 @@
   <div>
     <form action="">
       <fieldset>
-        <h3>Dados Pessoais</h3>
+        <legend>Dados Pessoais</legend>
         <label for="fNome">Nome do aluno</label>
         <input type="text" id="fNome" name="fNascimento" placeholder="Digite o nome do aluno"> <br>
         <label for="fNascimento">Nascimento</label>
@@ -74,7 +79,7 @@
       </fieldset>
 
       <fieldset>
-        <h3>Informações de Matrícula</h3>
+        <legend>Informações de Matrícula</legend>
         <table>
           <tr valign="top">
             <td>
